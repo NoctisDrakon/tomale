@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tómale!</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_perfil">PerfilActivity</string>
+    <string name="google_api_kei">AIzaSyBBvgjX4-rRbfjjHeZ8mQWxrfcoWIGmEZw</string>
+    <string name="title_activity_configuracion">Configuracion</string>
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contenedor"
+        android:padding="10dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Recomendado para ti"
+            android:id="@+id/recomtext"
+
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recomendado"
+
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/recomendadoimg"
+
+             />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/detallescont"
+                android:padding="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restaurant Bar La Ensalada"
+                android:id="@+id/nombrereco"
+
+                style="@style/TitulosRest"
+               />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Restaurante vegetariano"
+                    android:id="@+id/categreco"
+                    android:layout_gravity="right"
+                    style="@style/SubtitulosRest"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/estrellasrec"
+                    android:src="@drawable/e5"
+                     />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:minHeight="1px"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/separador"
+        android:background="#cccccc"
+        android:padding="10dp"
+        />
+
+        <!-- Inicia ultimas fotos-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Últimas fotos"
+            android:id="@+id/imggaltext"
+            android:layout_marginTop="10dp"
+            />
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+        <!-- Termina Ultimas Fotos-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:minHeight="1px"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:id="@+id/separador2"
+            android:background="#cccccc"
+            android:padding="10dp"
+            />
+
+        <!-- Inicia lugares populares-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Lugares populares"
+            android:id="@+id/textView2"
+            android:layout_marginTop="10dp"/>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/popularescont"/>
+
+        <!-- Termina Lugares Populares -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:minHeight="1px"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:id="@+id/separador3"
+            android:background="#cccccc"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
